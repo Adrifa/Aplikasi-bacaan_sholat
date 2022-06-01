@@ -1,6 +1,6 @@
-
 import 'package:bacaan_sholat/page/niat_sholat_page.dart';
 import 'package:flutter/material.dart';
+
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
 
@@ -19,7 +19,7 @@ class _MainPageState extends State<MainPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                margin: EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
                 child: Expanded(
                   child: InkWell(
                     highlightColor: Colors.transparent,
@@ -28,10 +28,10 @@ class _MainPageState extends State<MainPage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => NiatSholat()));
+                              builder: (context) => const NiatSholat()));
                     },
                     child: Column(
-                      children: [
+                      children: const [
                         Image(
                           image: AssetImage("assets/images/ic_niat.png"),
                           height: 100,
@@ -48,15 +48,15 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               Container(
-                margin: EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
                 child: Expanded(
                   child: InkWell(
                     highlightColor: Colors.transparent,
                     splashColor: Colors.transparent,
                     child: Column(
-                      children: [
+                      children: const [
                         Image(
                           image: AssetImage("assets/images/ic_doa.png"),
                           height: 100,
@@ -73,16 +73,15 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               Container(
-                margin: EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
                 child: Expanded(
                   child: InkWell(
                     highlightColor: Colors.transparent,
                     splashColor: Colors.transparent,
-
                     child: Column(
-                      children: [
+                      children: const [
                         Image(
                           image: AssetImage("assets/images/ic_bacaan.png"),
                           height: 100,
