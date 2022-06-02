@@ -1,4 +1,4 @@
-import 'package:bacaan_shalat/page/niat_sholat_page.dart';
+import 'package:bacaan_sholat/page/niat_sholat_page.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
@@ -19,16 +19,19 @@ class _MainPageState extends State<MainPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: Expanded(
                 child: InkWell(
                   highlightColor: Colors.transparent,
                   splashColor: Colors.transparent,
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => NiatSholat()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const NiatSholat()));
                   },
                   child: Column(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Image(
                         image: AssetImage("assets/images/ic_niat.png"),
                         height: 100,
@@ -47,18 +50,18 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: Expanded(
                 child: InkWell(
                   highlightColor: Colors.transparent,
                   splashColor: Colors.transparent,
                   onTap: () {},
                   child: Column(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Image(
                         image: AssetImage("assets/images/ic_bacaan.png"),
                         height: 100,
@@ -77,18 +80,18 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: Expanded(
                 child: InkWell(
                   highlightColor: Colors.transparent,
                   splashColor: Colors.transparent,
                   onTap: () {},
                   child: Column(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Image(
                         image: AssetImage("assets/images/ic_doa.png"),
                         height: 100,
@@ -107,7 +110,7 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
           ],
