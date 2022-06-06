@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:bacaan_sholat/model/model_niat.dart';
+import 'package:bacaan_shalat/model/model_niat.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 

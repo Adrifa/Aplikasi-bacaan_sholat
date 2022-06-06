@@ -1,4 +1,4 @@
-import 'package:bacaan_sholat/page/niat_sholat_page.dart';
+import 'package:bacaan_shalat/page/niat_sholat_page.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
