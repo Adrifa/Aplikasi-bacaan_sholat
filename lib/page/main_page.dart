@@ -1,3 +1,4 @@
+import 'package:bacaan_sholat/page/ayat_kursi_page.dart';
 import 'package:bacaan_sholat/page/bacaan_sholat_page.dart';
 import 'package:bacaan_sholat/page/niat_sholat_page.dart';
 import 'package:flutter/material.dart';
@@ -87,6 +88,10 @@ class _MainPageState extends State<MainPage> {
                   child: InkWell(
                     highlightColor: Colors.transparent,
                     splashColor: Colors.transparent,
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => AyatKursi()));
+                    },
                     child: Column(
                       children: [
                         Image(
